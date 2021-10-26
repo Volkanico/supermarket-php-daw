@@ -8,8 +8,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Nom: " . $row["nom"]. " - Descripcio " . $row["descripcio"]. " - Preu " . $row["preu"].
-    '<img src="fruta/imagen1111.jpg" width="50" height="50" />'; "<br>";
+    echo "id: " . $row["id"]. " - Nom: " . $row["nom"]. " - Descripcio " . $row["descripcio"]. " - Preu " . $row["preu"]. "<br>";
   }
 } else {
   echo "0 results";
@@ -33,59 +32,5 @@ $conn->close();
     }
 </style>
 <body>
-<div class="card-body">
-            <img class="card-img" src="fruta/imagen1111.jpg" alt="Card image cap">
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">Id: 1111 </li>
-        <li class="list-group-item">Nom: naranja </li>
-        <li class="list-group-item">Descripció: es naranja </li>
-        <li class="list-group-item">Preu: 2€</li>
-        </ul>
-        </div> 
-
-        <div class="card-body">
-            <img class="card-img" src="fruta/imagen2222.jpg" alt="Card image cap">
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">Id: 2222</li>
-        <li class="list-group-item">Nom: limon</li>
-        <li class="list-group-item">Descripció: es amarillo</li>
-        <li class="list-group-item">Preu: 4€</li>
-        </ul>
-        </div> 
-
-        <div class="card-body">
-            <img class="card-img" src="fruta/imagen3333.jpg" alt="Card image cap">
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">Id: 3333</li>
-        <li class="list-group-item">Nom: pera</li>
-        <li class="list-group-item">Descripció: es verde</li>
-        <li class="list-group-item">Preu: 3€</li>
-        </ul>
-        </div> 
-
-        <div class="card-body">
-            <img class="card-img" src="fruta/imagen4444.jpg" alt="Card image cap">
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">Id: 4444</li>
-        <li class="list-group-item">Nom: melocoton</li>
-        <li class="list-group-item">Descripció: es dulce</li>
-        <li class="list-group-item">Preu: 6€</li>
-        </ul>
-        </div> 
-
-        <div class="card-body">
-            <img class="card-img" src="fruta/imagen5555.jpg" alt="Card image cap">
-        </div>
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item">Id: 5555</li>
-        <li class="list-group-item">Nom: lima</li>
-        <li class="list-group-item">Descripció: es verde, lima</li>
-        <li class="list-group-item">Preu: 5€</li>
-        </ul>
-        </div> 
 </body>
 </html>
